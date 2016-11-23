@@ -30,6 +30,18 @@ header{
     
 }
 
+.hur_fungerar_det{
+    width: 50%;
+    text-align: center;
+    background-color: ghostwhite;
+    display: block;
+    padding-left: 20%;
+    
+    
+}
+a{
+    background-color: ghostwhite;
+}
 
 h1{
     display: block;
