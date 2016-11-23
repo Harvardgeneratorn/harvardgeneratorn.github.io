@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<title>Referera enligt harvard</title>
+<script src="jquery.js"></script>
+<script src="scripts.js"></script>   
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Harvardgeneratorn</h1>
+            <h3>-Få dina källor refererade automatiskt! </h3>
+        
+        </header>
+        <nav id="main-menu">
+            <ul id="main-menu-list">
+                <li class="flexlist" ><a href="index.html" class="main-menu-list-element" id="nr1" >Referera</a>
+                    <ul id="ref-list">
+                        <li><a href="artikel-i-tidsskrift.html" class="drop">Artikel i tidsskrift</a></li>
+                        <li><a href="artikel-i-dagstidning.html" class="drop">Artikel i dagstidning</a></li>
+                        <li><a href="bok.html" class="drop">Bok</a></li>
+                        <li><a href="avhandling.html" class="drop">Avhandling</a></li>
+                        <li><a href="webbsida.html" class="drop">Webbsida</a></li>
+                    </ul>
+                
+                
+                </li>
+                <li class="flexlist"><a href="index.html" class="main-menu-list-element">Hur fungerar det?</a></li>
+                <li class="flexlist"><a href="index.html" class="main-menu-list-element">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2 class="rubrik">Webbsida</h2>
+            
+            <div id="forfattare1">
+                <p class="anvisning">Författarens förnamn (första bokstaven räcker):</p>
+                <input class="inmatningsfonster fornamn" placeholder="S">
+                <p class="anvisning">Författarens efternamn:</p>
+                <input class="inmatningsfonster efternamn" placeholder="Eklund">
+                <div class="ny_person"></div>
+                <button class="lagg_till_person" id="person1">Lägg till författare</button>
+            </div>
+            
+            <div id="forfattare2">
+                <hr class="halvlinje">
+                <p class="anvisning">Författarens förnamn:</p>
+                <div class="kryss_ny_person" id="kryss_ny_person2"></div>
+                <input class="inmatningsfonster fornamn">
+                <p class="anvisning">Författarens efternamn:</p>
+                <input class="inmatningsfonster efternamn">
+                <div class="ny_person"></div>
+                <button class="lagg_till_person" id="person2">Lägg till författare</button>
+            </div>
+            
+            <div id="forfattare3">
+                <hr class="halvlinje">
+                <p class="anvisning">Författarens förnamn:</p>
+                <div class="kryss_ny_person" id="kryss_ny_person3"></div>
+                <input class="inmatningsfonster fornamn">
+                <p class="anvisning">Författarens efternamn:</p>
+                <input class="inmatningsfonster efternamn">
+                <div class="ny_person"></div>
+                <button class="lagg_till_person" id="person3">Lägg till författare</button>
+            </div>
+            
+            <div id="forfattare4">
+                <hr class="halvlinje">
+                <p class="anvisning">Författarens förnamn:</p>
+                <div class="kryss_ny_person" id="kryss_ny_person4"></div>
+                <input class="inmatningsfonster fornamn">
+                <p class="anvisning">Författarens efternamn:</p>
+                <input class="inmatningsfonster efternamn">
+                <div class="ny_person"></div>
+                <button class="lagg_till_person" id="person4">Lägg till författare</button>
+            </div>
+            
+            <div id="forfattare5">
+                <hr class="halvlinje">
+                <p class="anvisning">Författarens förnamn:</p>
+                <div class="kryss_ny_person" id="kryss_ny_person5"></div>
+                <input class="inmatningsfonster fornamn">
+                <p class="anvisning">Författarens efternamn:</p>
+                <input class="inmatningsfonster efternamn">
+                <div class="ny_person"></div>
+                <button class="lagg_till_person" id="person5">Lägg till författare</button>
+            </div>
+            
+            <div id="forfattare6">
+                <hr class="halvlinje">
+                <p class="anvisning">Författarens förnamn:</p>
+                <div class="kryss_ny_person" id="kryss_ny_person6"></div>
+                <input class="inmatningsfonster fornamn">
+                <p class="anvisning">Författarens efternamn:</p>
+                <input class="inmatningsfonster efternamn">
+                <div class="ny_person"></div>
+                <button class="lagg_till_person" id="person6">Lägg till författare</button>
+            </div>
+            
+            <div id="forfattare7">
+                <hr class="halvlinje">
+                <p class="anvisning">Författarens förnamn:</p>
+                <div class="kryss_ny_person" id="kryss_ny_person7"></div>
+                <input class="inmatningsfonster fornamn">
+                <p class="anvisning">Författarens efternamn:</p>
+                <input class="inmatningsfonster efternamn">
+                <div class="ny_person"></div>
+                <button class="lagg_till_person" id="person7">Lägg till författare</button>
+            </div>
+            
+            <div id="forfattare8">
+                <hr class="halvlinje">
+                <p class="anvisning">Författarens förnamn:</p>
+                <div class="kryss_ny_person" id="kryss_ny_person8"></div>
+                <input class="inmatningsfonster fornamn">
+                <p class="anvisning">Författarens efternamn:</p>
+                <input class="inmatningsfonster efternamn">
+                <div class="ny_person"></div>
+                <button class="lagg_till_person" id="person8">maximalt antal författare</button>
+            </div>
+                
+            
+            <p class="anvisning">Upphovsman (fyll endast i om ingen författare finns):</p>
+            <input class="inmatningsfonster" id="upphovsman" placeholder="Skolverket">
+            <p class="anvisning">År för senaste uppdatering (saknas årtal skriv "u.å"):</p>
+            <input class="inmatningsfonster" id="ar" placeholder="2015">
+            <p class="anvisning">Titel:</p>
+            <input class="inmatningsfonster" id="titel" placeholder=" Utbildning i svenska för invandrare">
+            <p class="anvisning">URL:</p>
+            <input class="inmatningsfonster" id="url" placeholder="http://www.skolverket.se/skolformer/vuxenutbildning/utbildning-i-svenska-for-invandrare">
+            <p class="anvisning">Datum för åtkomst:</p>
+            <input class="inmatningsfonster" id="datum" placeholder="2015-06-22">
+            <button class="genera_referens" id="generera_webbsida">Generera referens</button>
+            <button class="rensa_inmatningsfonster">Rensa inmatningsfönster</button>
+            <p class = "anvisning">Referens: </p>
+            <div id = "referensen"><span id="fore"></span><span id="italic"></span><span id="efter"></span></div>
+            
+            <br><br><br><br> <br><br><br><br>
+        
+        </article>
+      
+    
+   
+</div>
+        
+</body>
+</html>

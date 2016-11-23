@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+#wrapper{
+    background-color: ghostwhite;
+    width: 80%;
+    height: 100%;
+    position:absolute;
+    margin-left: 10%;
+    overflow: auto;
+    box-sizing: border-box;
+ 
+}
+
+header{
+    background-color: greenyellow;
+    width: 100%;
+    
+
+}
+   
+#main-menu{
+   
+    width: 100%;
+    background-color: azure;
+    
+}
+
+
+h1{
+    display: block;
+    background-color: royalblue;
+    padding: 0;
+    margin: 0;
+    font-size: 50px; 
+    padding-top: 15px;
+    text-align: center;
+    font-family: Georgia, serif; 
+    
+   
+}
+h3{
+    background-color: royalblue;
+    font-family: Georgia, serif; 
+    text-align: center;
+    padding-bottom: 10px
+}
+
+#ads{
+    height: 100%;
+    width: 10%;
+    background-color: black;
+    position: fixed;
+    left: 85%;
+}
+
+#ads:after{
+    content: "";
+    display: block;
+    float: clear;
+}
+
+img{
+    width: 100%;
+    box-sizing: border-box;
+    border: 4px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+/*      Huvudmeny flex      */
+
+
+.flexlist{
+    float: left;
+    width: 200px;
+    list-style-type: none;   
+}
+
+#main-menu-list{
+    background-color: azure;
+    width: 100%;
+    height: 66px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.main-menu-list-element{
+    
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family:cursive;
+    color: black;
+    border-right: 1px  solid black;
+    background-color: azure;
+    
+    
+}
+
+.main-menu-list-element:hover{
+    background-color: lightblue;
+    
+}
+
+/*      Referingsmeny       */
+#ref-list{
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+   
+}
+#ref-list:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#ref-list a{
+    display: block;
+    padding: 20px;
+    width: 200px;
+    background-color: azure;
+    box-sizing: border-box;
+    font-family: cursive;
+    text-decoration: none;
+    border: 1px solid black;
+    
+    
+}
+
+
+#ref-list a:hover{
+    background-color: lightblue;
+}
+
+.flexlist:nth-child(1):hover #ref-list{ 
+    animation-name: menu;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+
+.drop a:hover {
+        
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family:cursive;
+    color: black;
+    border: 1px solid black;
+    background-color: black;
+    
+}
+
+
+/*  ANIMATIONS  */
+@keyframes menu{
+    0%{
+        transform: translateY(0px)
+        height: 0px;
+    }
+    100%{
+        height: 325px;
+    }
+}
+
+
+/*      Article      */
+
+article{
+    width: 100%;
+    background-color: ghostwhite;;
+    float: left;
+    box-sizing: border-box;
+    padding: 50px 0px 0px 50px;
+}
+
+.rubrik{
+    background-color: transparent; 
+    margin: 0px 0px 20px 0px;
+    
+}
+
+.anvisning{
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: default;
+    float: left;
+    width: 70%;
+    color: black;
+}
+
+.inmatningsfonster{
+    background-color: aliceblue;
+    color: darkblue;
+    width: 75%;
+    height: 3em;
+    padding: 10px 0px 10px 10px ;
+    font-family: cursive;
+    font-size: 15px;
+    border: 1px solid blue;
+    margin: 10px 0px 10px 0px; 
+    box-sizing: border-box;
+
+}
+
+.lagg_till_person{
+    display: block;
+    margin: 10px 0px 30px 0;
+    width: 75%;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: lightskyblue;
+  
+}
+.genera_referens{
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 37.5%;
+    background-color: lightskyblue;
+    font-weight: bold;
+
+}
+.rensa_inmatningsfonster{
+    display: block;
+    margin: 10px 0 -59px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 37.5%;
+    position: relative;
+    left: 37.5%;
+    bottom: 69px;
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+div{
+    background-color: transparent;
+}
+.halvlinje{
+    width: 75%;
+    height: 3px;
+    background-color: lightskyblue;
+}
+.kryss_ny_person{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 73%;
+    background-color: red;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+
+}
+.kryss_ny_person:active{
+    background-color: indianred;
+    border: 2px solid black;   
+}
+
+#forfattare2, #forfattare3, 
+#forfattare4, #forfattare5, 
+#forfattare6, #forfattare7, 
+#forfattare8{
+    display: none;
+}
+   
+#referensen{
+    width: 75%;
+    border: 1px solid blue;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: 10px 0px 11px 10px;
+    min-height: 40px;
+    margin: 40px 0;
+}
+
+#fore, #efter{
+    background-color: transparent;
+    font-family: times new roman;
+    
+}
+
+#italic{
+    font-style: italic;
+    background-color: transparent;  
+    font-family: times new roman;
+}
+
+
+
+
