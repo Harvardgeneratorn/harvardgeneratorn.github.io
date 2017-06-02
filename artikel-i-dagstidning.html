@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="stylesheet.css" rel="stylesheet" type="text/css">
-<title>Referera automatiskt enligt harvard!</title>
-<meta name="Generera dina referenser automatiskt enligt harvardmetoden"/>
-<meta name="harvard, harvardsystemet, citera, automatiskt, referenser" />
-<script src="jquery.js"></script>
-<script src="scripts.js"></script>   
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <title>Referera automatiskt enligt harvard!</title>
+    <meta name="Generera dina referenser automatiskt enligt harvardmetoden" />
+    <meta name="harvard, harvardsystemet, citera, automatiskt, referenser" />
+    <script src="jquery.js"></script>
+    <script src="scripts.js"></script>
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9RFGQ2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="wrapper">
         <header>
             <h1>Harvardgeneratorn</h1>
             <h3>-Få dina källor refererade automatiskt! </h3>
-        
+
         </header>
         <nav id="main-menu">
             <ul id="main-menu-list">
-                <li class="flexlist" ><a href="index.html" class="main-menu-list-element" id="nr1" >Referera</a>
+                <li class="flexlist"><a href="index.html" class="main-menu-list-element" id="nr1">Referera</a>
                     <ul id="ref-list">
                         <li><a href="index.html" class="drop">Artikel i tidsskrift</a></li>
                         <li><a href="artikel-i-dagstidning.html" class="drop">Artikel i dagstidning</a></li>
@@ -27,8 +33,8 @@
                         <li><a href="avhandling.html" class="drop">Avhandling</a></li>
                         <li><a href="webbsida.html" class="drop">Webbsida</a></li>
                     </ul>
-                
-                
+
+
                 </li>
                 <li class="flexlist"><a href="hur_fungerar_det.html" class="main-menu-list-element">Hur fungerar det?</a></li>
                 <li class="flexlist"><a href="kontakt.html" class="main-menu-list-element">Kontakt</a></li>
@@ -37,7 +43,7 @@
 
         <article>
             <h2 class="rubrik">Artikel i dagstidning</h2>
-            
+
             <div id="forfattare1">
                 <p class="anvisning">Författarens förnamn (första bokstaven räcker):</p>
                 <input class="inmatningsfonster fornamn" placeholder="M">
@@ -46,7 +52,7 @@
                 <div class="ny_person"></div>
                 <button class="lagg_till_person" id="person1">Lägg till författare</button>
             </div>
-            
+
             <div id="forfattare2">
                 <hr class="halvlinje">
                 <p class="anvisning">Författarens förnamn:</p>
@@ -57,7 +63,7 @@
                 <div class="ny_person"></div>
                 <button class="lagg_till_person" id="person2">Lägg till författare</button>
             </div>
-            
+
             <div id="forfattare3">
                 <hr class="halvlinje">
                 <p class="anvisning">Författarens förnamn:</p>
@@ -68,7 +74,7 @@
                 <div class="ny_person"></div>
                 <button class="lagg_till_person" id="person3">Lägg till författare</button>
             </div>
-            
+
             <div id="forfattare4">
                 <hr class="halvlinje">
                 <p class="anvisning">Författarens förnamn:</p>
@@ -79,7 +85,7 @@
                 <div class="ny_person"></div>
                 <button class="lagg_till_person" id="person4">Lägg till författare</button>
             </div>
-            
+
             <div id="forfattare5">
                 <hr class="halvlinje">
                 <p class="anvisning">Författarens förnamn:</p>
@@ -90,7 +96,7 @@
                 <div class="ny_person"></div>
                 <button class="lagg_till_person" id="person5">Lägg till författare</button>
             </div>
-            
+
             <div id="forfattare6">
                 <hr class="halvlinje">
                 <p class="anvisning">Författarens förnamn:</p>
@@ -101,7 +107,7 @@
                 <div class="ny_person"></div>
                 <button class="lagg_till_person" id="person6">Lägg till författare</button>
             </div>
-            
+
             <div id="forfattare7">
                 <hr class="halvlinje">
                 <p class="anvisning">Författarens förnamn:</p>
@@ -112,7 +118,7 @@
                 <div class="ny_person"></div>
                 <button class="lagg_till_person" id="person7">Lägg till författare</button>
             </div>
-            
+
             <div id="forfattare8">
                 <hr class="halvlinje">
                 <p class="anvisning">Författarens förnamn:</p>
@@ -123,10 +129,10 @@
                 <div class="ny_person"></div>
                 <button class="lagg_till_person" id="person8">maximalt antal författare</button>
             </div>
-                
-            
+
+
             <p class="anvisning">Utgivningsår (saknas årtal skriv "u.å"):</p>
-            <input class="inmatningsfonster" id="ar" placeholder= "2013">
+            <input class="inmatningsfonster" id="ar" placeholder="2013">
             <p class="anvisning">Artikelns titel:</p>
             <input class="inmatningsfonster" id="titel" placeholder=" Radiotjänst tar sikte på småföretagare">
             <p class="anvisning">Tidningens titel:</p>
@@ -137,17 +143,18 @@
             <input class="inmatningsfonster" id="lank" placeholder="http://www.dn.se/ekonomi/radiotjanst-tar-sikte-pa-smaforetagare/">
             <button class="genera_referens" id="generera_artikel_i_dagstidning">Generera referens</button>
             <button class="rensa_inmatningsfonster">Rensa inmatningsfönster</button>
-            
-            <p class = "anvisning">Referens: </p>
-            <div id = "referensen"><span id="fore"></span><span id="italic"></span><span id="efter"></span></div>
-            
+
+            <p class="anvisning">Referens: </p>
+            <div id="referensen"><span id="fore"></span><span id="italic"></span><span id="efter"></span></div>
+
             <br><br><br><br> <br><br><br><br>
-        
+
         </article>
-      
-    
-   
-</div>
-        
+
+
+
+    </div>
+
 </body>
+
 </html>
